@@ -1,0 +1,48 @@
+body {
+    --color-bg: #dddddd;
+    --color-text: #ee6352;
+}
+
+body.dark-theme {
+    --color-bg: rgb(0, 0, 0);
+    --color-text: wheat;
+}
+
+
+/* body.dark-theme img {
+    filter: brightness(.8) contrast(1.2);
+} */
+
+body {
+    background-color: var(--color-bg);
+}
+
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: var(--color-text);
+}
+
+button {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    /* background-color: darkgreen; */
+    width: 20%;
+    height: 5%;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --color-bg: rgb(0, 0, 0);
+        --color-text: wheat;
+    }
+    body.light-theme {
+        --color-bg: #DDDDDD;
+        --color-text: #EE6352;
+    }
+    /* img {
+        filter: brightness(.8) contrast(1.2);
+    } */
+}
